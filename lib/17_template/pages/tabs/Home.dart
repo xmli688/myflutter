@@ -13,6 +13,7 @@ import 'package:my_app/17_template/pages/tabs/home_drawer.dart';
 
 import '../10_Flow流式布局动画圆形菜单/bottom_5_page.dart';
 import '../11_path_provider使用/path_provider_page.dart';
+import '../12_轮盘旋转/wheel_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -71,6 +72,11 @@ class _HomePageState extends State<HomePage> {
                 title: "11：文件、文件夹操作 path_provider的使用",
                 onPressed: () {
                   Get.to(const PathProviderPage());
+                }),
+            _buildButton(
+                title: '12：轮盘旋转动画',
+                onPressed: () {
+                  Get.to(const WheelPage());
                 }),
 
           ],
